@@ -1,4 +1,4 @@
-node server.js &
+node ./src/server.js &
 touch pid.txt
 if cat pid.txt | grep ''  > /dev/null
 then
