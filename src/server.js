@@ -1,4 +1,4 @@
-const http = require('https')
+const http = require('http')
 const express = require('express')
 const app = express()
 const fs = require('fs')
@@ -9,8 +9,7 @@ const port = process.env.PORT || 5555
 app.use(express.static('./'))
 
 app.get('/', (req, res) => {
-	res.setHeader('Content-Type', 'image/gif')
-	res.sendFile('./dist/index.html')
+	res.sendFile(path.join(__dirname, './index.html'))
 })
 
 /* TODO FOR HTTPS
@@ -20,14 +19,14 @@ const options = {
 };
 */
 
-const server = http.createServer(options, app)
+const server = http.createServer(app)
 
 server.listen(port, hostname, () => {
-	console.log(`Server running at https://${hostname}:${port}/`)
+	console.log(`Server running on https://${hostname}:${port}/`)
 })
 
 process.on('SIGTERM', () => {
 	server.close( () => {
-		console.log(`Server closed at http://${hostname}:${port}/`)
+		console.log(`Server closed on https://${hostname}:${port}/`)
 	})
 })
