@@ -9,7 +9,7 @@ const port = process.env.PORT || 5555
 app.use(express.static('./'))
 
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, './index.html'))
+	res.sendFile(path.join(__dirname, '/index.html'))
 })
 
 /* TODO FOR HTTPS

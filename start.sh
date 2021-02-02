@@ -1,4 +1,5 @@
-node ./src/server.js &
+DIRNAME=$(dirname "$0")/
+node $DIRNAME/src/server.js &
 touch pid.txt
 if cat pid.txt | grep ''  > /dev/null
 then
