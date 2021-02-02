@@ -1,1 +1,1 @@
-kill -SIGTERM $(cat serverPID.txt) && rm serverPID.txt
+kill -SIGTERM $(cat pid.txt) && rm pid.txt
