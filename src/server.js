@@ -1,15 +1,16 @@
 const http = require('http')
+const fs = require('fs')
+const path = require('path')
 const express = require('express')
 const app = express()
-const fs = require('fs')
 
 const hostname = '192.168.1.70'
 const port = process.env.PORT || 5555
 
-app.use(express.static('./'))
+app.use(express.static(__dirname))
 
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, '/index.html'))
+	res.sendFile(path.join(__dirname, '/bundle.html'))
 })
 
 /* TODO FOR HTTPS
