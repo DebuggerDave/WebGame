@@ -19,6 +19,9 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+      publicPath: 'Public/'  
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: 'src/index.html'

@@ -9,6 +9,10 @@ const port = process.env.PORT || 5555
 
 app.use(express.static(path.join(__dirname, '/public/')))
 
+app.get('/index.js', (req, res) => {
+	res.sendFile(path.join(__dirname, '/index.js'))
+})
+
 app.get('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, '/index.html'))
 })
