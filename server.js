@@ -7,11 +7,10 @@ const app = express()
 const hostname = '192.168.1.70'
 const port = process.env.PORT || 5555
 
-app.use(express.static(path.join(__dirname, '/../dist')))
-app.use(express.static(path.join(__dirname, '/../img')))
+app.use(express.static(path.join(__dirname, '/public/')))
 
 app.get('/*', (req, res) => {
-	res.sendFile(path.join(__dirname, '/../dist/index.html'))
+	res.sendFile(path.join(__dirname, '/index.html'))
 })
 
 /* TODO FOR HTTPS
