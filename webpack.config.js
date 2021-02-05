@@ -16,13 +16,19 @@ module.exports = {
             { 
                 test: /\.css$/, 
                 use: ['style-loader', 'css-loader'] 
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|GIF|webp)$/i,
+                type: 'asset/resource'
             }
         ]
     },
-    mode: 'development',
     devServer: {
-      publicPath: 'img/',
-      openPage: 'dist/'  
+      publicPath: 'http://localhost:8080/img/',
+      openPage: 'http://localhost:8080/img/',
+    },
+    output: {
+        publicPath: 'http://localhost:8080/img/'
     },
     plugins: [
         new HtmlWebpackPlugin({

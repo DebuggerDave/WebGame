@@ -11,7 +11,7 @@ import './index.css';
 class App extends React.Component {
     render() {
         return(
-            <div Style="background-image: url('background.webp')">
+            <div>
                 <Router>
                     <div className="nav">
                         <nav>
