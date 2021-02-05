@@ -45,7 +45,7 @@ function Home() {
     return (
         <div>
             <h2>Home</h2>
-            <img src="./../arms_front.gif" alt="Big Boi"></img>
+            <img src="arms_front.gif" alt="Big Boi"></img>
         </div>    
     );
 }

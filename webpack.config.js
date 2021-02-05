@@ -19,8 +19,10 @@ module.exports = {
             }
         ]
     },
+    mode: 'development',
     devServer: {
-      publicPath: 'Public/'  
+      publicPath: 'img/',
+      openPage: 'dist/'  
     },
     plugins: [
         new HtmlWebpackPlugin({
