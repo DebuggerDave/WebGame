@@ -10,11 +10,11 @@ const port = process.env.PORT || 5555
 app.use(express.static(path.join(__dirname, '/img/')))
 
 app.get('/index.js', (req, res) => {
-	res.sendFile(path.join(__dirname, '/index.js'))
+	res.sendFile(path.join(__dirname, '/dist/index.js'))
 })
 
 app.get('/*', (req, res) => {
-	res.sendFile(path.join(__dirname, '/index.html'))
+	res.sendFile(path.join(__dirname, '/dist/index.html'))
 })
 
 /* TODO FOR HTTPS
