@@ -25,6 +25,7 @@ module.exports = {
     },
     devServer: {
       publicPath: 'http://localhost:8080/',
+      historyApiFallback: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
