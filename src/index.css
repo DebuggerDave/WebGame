@@ -3,8 +3,14 @@ html, body {
   height: 100%;
 }
 
-nav {
+.navFlexContain {
   background-color: green;
+  width: 100%;
+  display: flex;
+}
+
+.navFlex {
+  justify-content: space-around;
 }
 
 body {
