@@ -26,9 +26,6 @@ module.exports = {
     devServer: {
       publicPath: 'http://localhost:8080/',
     },
-    output: {
-        publicPath: 'http://localhost:8080/'
-    },
     plugins: [
         new HtmlWebpackPlugin({
             template: 'src/index.html'
