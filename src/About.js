@@ -1,8 +1,8 @@
 import React from 'react';
 
-import bugRectangle from './../img/about_bug_rectangle.webp';
-import busyLaura from './../img/busy_laura.webp';
-import bugSquare from './../img/about_bug_square.webp';
+import bugRectangle from './img/about_bug_rectangle.webp';
+import busyLaura from './img/busy_laura.webp';
+import bugSquare from './img/about_bug_square.webp';
 
 class About extends React.Component {
     render() {

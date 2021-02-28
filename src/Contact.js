@@ -1,8 +1,8 @@
 import React from 'react';
 
-import bugRectangle from './../img/contact_bug_rectangle.webp';
-import bugSquare1 from './../img/contact_bug_square.webp';
-import bugSquare2 from './../img/contact_bug_square_two.webp';
+import bugRectangle from './img/contact_bug_rectangle.webp';
+import bugSquare1 from './img/contact_bug_square_one.webp';
+import bugSquare2 from './img/contact_bug_square_two.webp';
 
 class Contact extends React.Component {
     render() {

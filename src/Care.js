@@ -1,9 +1,9 @@
 import React from 'react';
 
-import bugRectangle from './../img/care_bug_rectangle.webp';
-import pdf from './../img/pdf.webp';
-import bugSquare1 from './../img/care_bug_square.webp';
-import bugSquare2 from './../img/care_bug_square_two.webp';
+import bugRectangle from './img/care_bug_rectangle.webp';
+import pdf from './img/pdf.webp';
+import bugSquare1 from './img/care_bug_square_one.webp';
+import bugSquare2 from './img/care_bug_square_two.webp';
 
 class Care extends React.Component {
     render() {

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import princess from './../img/smug_bug.webp';
-import bugRectangle from './../img/home_bug_rectangle.webp';
-import bugSquare from './../img/home_bug_square.webp';
+import princess from './img/smug_bug.webp';
+import bugRectangle from './img/home_bug_rectangle.webp';
+import bugSquare from './img/home_bug_square.webp';
 
 //<div style={{maxHeight: 10}}>
 //<img style={{width: '100%', objectFit: 'cover'}} src={bugRectangle} alt='Bug Background'/>

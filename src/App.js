@@ -15,8 +15,8 @@ import Blog from './Blog';
 
 import './index.css';
 
-import facebook from './../img/facebook.webp';
-import instagram from './../img/instagram.webp';
+import facebook from './img/facebook.webp';
+import instagram from './img/instagram.webp';
 
 class App extends React.Component {
     render() {
