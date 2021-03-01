@@ -1,4 +1,4 @@
 # WebGame
 Web development practice with React.js and Node.js
 
-Copying my sisters business website devloped with Wix, [Smug-Bug](https://www.smug-bug.com/)
+Copying my sister's business website devloped with Wix, [Smug-Bug](https://www.smug-bug.com/)
